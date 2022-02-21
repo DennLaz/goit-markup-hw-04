@@ -108,6 +108,8 @@ span {
 .contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacts-item:not(:last-child) {
@@ -115,11 +117,10 @@ span {
 }
 
 .contacts-list {
-  display: block;
+  display: inline-flex;
   margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -131,6 +132,11 @@ span {
 .contacts-list:focus,
 .contacts-list:hover {
   color: var(--special-text-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Герой  */
@@ -318,7 +324,76 @@ span {
   margin-top: 10px;
 }
 
+.team-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  /* width: 206px;
+  height: 44px; */
+}
+
+.team-list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: rgba(175, 177, 184, 1);
+}
+
+.team-link:hover {
+  background-color: var(--special-text-color);
+  color: var(--bg-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
 /* Наши клиенты */
+
+.clients {
+  padding-top: 94px;
+  margin-bottom: 66px;
+}
+
+.section-clients {
+  display: flex;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover {
+  color: var(--special-text-color);
+  border: 1px solid var(--special-text-color);
+}
+
+.clients-item {
+  margin-bottom: 94px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* Оформление Футера */
 
@@ -402,7 +477,7 @@ span {
 }
 
 .socials-link {
-  contain: ;
+  contain: "";
   display: inline-block;
   height: 44px;
   width: 44px;
