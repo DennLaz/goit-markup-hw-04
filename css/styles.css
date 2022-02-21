@@ -189,6 +189,41 @@ span {
   padding-top: 94px;
 }
 
+.section-subject {
+  width: calc((100%-90px) / 4);
+}
+
+.section-subject:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-subject::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 70 70;
+  background-position: center;
+}
+
+.antena::before {
+  background-image: url(../images/advantages/antenna.png);
+}
+
+.clock::before {
+  background-image: url(../images/advantages/clock.png);
+}
+
+.diagram::before {
+  background-image: url(../images/advantages/diagram.png);
+}
+
+.astronaut::before {
+  background-image: url(../images/advantages/astronaut.png);
+}
+
 /* Чем мы занимаемся */
 
 .work-job {
@@ -283,11 +318,18 @@ span {
   margin-top: 10px;
 }
 
+/* Наши клиенты */
+
 /* Оформление Футера */
 
 .bg-color {
   background-color: var(--bg-footer-color);
   padding: 60px 0;
+}
+
+.bg-color .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -300,6 +342,7 @@ span {
 }
 
 .address {
+  display: flex;
   margin-top: 20px;
 }
 
@@ -332,6 +375,63 @@ span {
 .address-contact:hover,
 .address-contact:focus {
   color: var(--special-text-color);
+}
+
+.socials-wrapper {
+  margin-left: 70px;
+}
+
+.socials-subtitle {
+  color: var(--bg-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.socials {
+  display: flex;
+  margin-top: 20px;
+}
+
+.socials-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-link {
+  contain: ;
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 20 20;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--special-text-color);
+}
+
+.link-instagram {
+  background-image: url(../images/footer-png/instagram.png);
+}
+
+.link-twitter {
+  background-image: url(../images/footer-png/twitter.png);
+}
+
+.link-facebook {
+  background-image: url(../images/footer-png/facebook.png);
+}
+
+.link-linkedin {
+  background-image: url(../images/footer-png/linkedin.png);
 }
 
 /* Стили для portfolio.html */
@@ -391,6 +491,12 @@ span {
 
 .items-desc:nth-child(3n) {
   margin-right: 0;
+}
+
+.items-desc:hover,
+.items-desc:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .items-links {
